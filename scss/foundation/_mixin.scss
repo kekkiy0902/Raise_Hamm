@@ -1,0 +1,9 @@
+$phone: 576px;
+$tab: 768px;
+$pc: 1025px;
+
+@mixin breakPoint($breakPoint) {
+    @media (min-width: ($breakPoint)) {
+      @content;
+    }
+  }

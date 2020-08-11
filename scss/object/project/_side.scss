@@ -1,0 +1,23 @@
+.side {
+    &__menu {
+        &__title {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 200px;
+            margin: 0 0 0 40px;
+            font-size: 34px;
+        }
+        &__sub {
+            margin: 0 0 30px 40px;
+            font-size: 24px;
+        }
+        &__list {
+            margin: 0 0 50px 60px;
+            font-size: 20px;
+            &__s-menu li {
+                margin: 0 0 20px 0px;
+            }
+        }
+    }
+}

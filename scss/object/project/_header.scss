@@ -1,0 +1,27 @@
+.header__balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &__name {
+        margin: 0 0 0 40px;
+        font-size: 30px;
+    }
+    &__search {
+        margin: 0 40px 0 0;
+        &__box {
+            width: 396px;
+            height: 46px;
+        }
+        &__button {
+            width: 136px;
+            height: 46px;
+            background-color: #F2EDE9;
+            color: #707070;
+            -webkit-border-radius: 8px; // for Safari and Chrome
+            -moz-border-radius: 8px; // for Firefox
+            -o-border-radius: 8px; // for opera
+            border-radius: 8px;
+        }
+    }
+}

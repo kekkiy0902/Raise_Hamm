@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* scssファイルインポート */
+/* ---------------------------------------------------------------------------- */
+/* foundation
+/* ---------------------------------------------------------------------------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+/* layout
+/* ---------------------------------------------------------------------------- */
+/*           グリッドレイアウト           */
+/*----------------------------------*/
+body {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  min-height: 100vh;
+  color: #707070;
+  -ms-grid-rows: 200px 1fr 150px;
+      grid-template-rows: 200px 1fr 150px;
+  -ms-grid-columns: 1fr 280px;
+      grid-template-columns: 1fr 280px;
+      grid-template-areas: "header  nav " "main  nav" "footer  footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: #FFF7EF;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background: #fff;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  background: #F2EDE9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background: #9D8670;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* object -> component
+/* ---------------------------------------------------------------------------- */
+.sample2Text {
+  width: 210px;
+  /* inputの幅           */
+  background-image: url(../../../img/megane.png);
+  /* 背景画像：虫眼鏡(*1)*/
+  background-repeat: no-repeat;
+  /* 背景は繰り返さない  */
+  background-position: 8px center;
+  /* 背景の位置          */
+  background-size: auto 60%;
+  /* 背景のサイズ        */
+  background-color: #fff;
+  /* 背景色              */
+  margin: 0 auto;
+  /* サンプルは中央寄せ  */
+  padding-left: 30px;
+  /* 虫眼鏡分の左余白    */
+  border: 2px solid #666;
+  /* 枠線　幅,実践,色    */
+  border-radius: 6px;
+  /* 角丸                */
+  color: #555;
+  /* 文字色              */
+  font-size: 18px;
+  /* フォントサイズ      */
+  letter-spacing: 0.1em;
+  /* 文字間隔            */
+  font-weight: bold;
+  /* 太字                */
+  outline: 0;
+  /* 入力薄枠を非表示    */
+}
+
+.sample2Text:focus {
+  background-color: #cfe7ff;
+  /* フォーカス時背景色  */
+}
+
+.sample2Text::-ms-clear {
+  display: none;
+  /* ×を消す            */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* object -> project
+/* ---------------------------------------------------------------------------- */
+.header__balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header__balance__name {
+  margin: 0 0 0 40px;
+  font-size: 30px;
+}
+
+.header__balance__search {
+  margin: 0 40px 0 0;
+}
+
+.header__balance__search__box {
+  width: 396px;
+  height: 46px;
+}
+
+.header__balance__search__button {
+  width: 136px;
+  height: 46px;
+  background-color: #F2EDE9;
+  color: #707070;
+  border-radius: 8px;
+}
+
+.menu__banner-img {
+  width: 100%;
+}
+
+.menu__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__select__b-img {
+  width: 500px;
+  height: 100%;
+}
+
+.side__menu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  margin: 0 0 0 40px;
+  font-size: 34px;
+}
+
+.side__menu__sub {
+  margin: 0 0 30px 40px;
+  font-size: 24px;
+}
+
+.side__menu__list {
+  margin: 0 0 50px 60px;
+  font-size: 20px;
+}
+
+.side__menu__list__s-menu li {
+  margin: 0 0 20px 0px;
+}
+
+.foot {
+  color: white;
+}
+
+.foot__info {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0 30px 0;
+}
+
+.foot__info-sub {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

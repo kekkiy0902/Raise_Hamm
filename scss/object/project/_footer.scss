@@ -1,0 +1,16 @@
+.foot {
+    color: white;
+    &__info {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0 30px 0;
+    }
+    &__info-sub {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

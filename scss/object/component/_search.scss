@@ -1,0 +1,25 @@
+.sample2Text {
+    width              : 210px;            /* inputの幅           */
+    background-image : url(../../../img/megane.png);  /* 背景画像：虫眼鏡(*1)*/
+    background-repeat  : no-repeat;        /* 背景は繰り返さない  */
+    background-position: 8px center;       /* 背景の位置          */
+    background-size    : auto 60%;         /* 背景のサイズ        */
+    background-color   : #fff;             /* 背景色              */
+    margin             : 0 auto;           /* サンプルは中央寄せ  */
+    padding-left       : 30px;             /* 虫眼鏡分の左余白    */
+    border             : 2px solid #666;   /* 枠線　幅,実践,色    */
+    border-radius      : 6px;              /* 角丸                */
+    color              : #555;             /* 文字色              */
+    font-size          : 18px;             /* フォントサイズ      */
+    letter-spacing     : 0.1em;            /* 文字間隔            */
+    font-weight        : bold;             /* 太字                */
+    outline            : 0;                /* 入力薄枠を非表示    */
+  }
+
+.sample2Text:focus {
+    background-color     : #cfe7ff;        /* フォーカス時背景色  */
+  }
+
+.sample2Text::-ms-clear {
+    display        : none;                 /* ×を消す            */
+  }
