@@ -1,22 +1,55 @@
 .side {
-    &__menu {
-        &__title {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            height: 200px;
-            margin: 0 0 0 40px;
-            font-size: 2.125rem;
+    background-color: #F2EDE9;
+    @include breakPointS($pc) {
+        display: none;
+    }
+    @include breakPoint($pc) {
+        &__menu {
+            &__title {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                height: 200px;
+                margin: 0 0 0 40px;
+                font-size: 2.125rem;
+            }
+            &__sub {
+                margin: 0 0 30px 40px;
+                font-size: 1.5rem;
+            }
+            &__list {
+                margin: 0 0 50px 60px;
+                font-size: 1.25rem;
+                &__s-menu li {
+                    margin: 0 0 20px 0px;
+                }
+            }
         }
-        &__sub {
-            margin: 0 0 30px 40px;
-            font-size: 1.5rem;
-        }
-        &__list {
-            margin: 0 0 50px 60px;
-            font-size: 1.25rem;
-            &__s-menu li {
-                margin: 0 0 20px 0px;
+    }
+}
+
+.sideNav {
+    background-color: #F2EDE9;
+    @include breakPointS($pc) {
+        &__menu {
+            &__title {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                height: 200px;
+                margin: 0 0 0 40px;
+                font-size: 2.125rem;
+            }
+            &__sub {
+                margin: 0 0 30px 40px;
+                font-size: 1.5rem;
+            }
+            &__list {
+                margin: 0 0 50px 60px;
+                font-size: 1.25rem;
+                &__s-menu li {
+                    margin: 0 0 20px 0px;
+                }
             }
         }
     }

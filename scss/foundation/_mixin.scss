@@ -1,9 +1,18 @@
+$mini: 415px;
 $phone: 576px;
 $tab: 768px;
 $pc: 1025px;
 
+// 〜以上
 @mixin breakPoint($breakPoint) {
     @media (min-width: ($breakPoint)) {
       @content;
     }
-  }
+}
+
+// 〜以下
+@mixin breakPointS($smart) {
+    @media (max-width: ($smart)) {
+      @content;
+    }
+}

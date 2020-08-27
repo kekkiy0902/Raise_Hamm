@@ -3,26 +3,42 @@
         background-image: url(/img/banner.png);
         background-size: cover;
         background-position: center;
-        height: 530px;
+        height: 285px;
+        @include breakPoint($pc) {
+            height: 530px;
+        }
         h2 {
             display: flex;
             justify-content: left;
             align-items: center;
             height: 100%;
             color: #ffffff;
-            font-size: 2.8em;
+            font-size: 2.8rem;
             padding-left: 80px;
+            @include breakPointS($phone) {
+                font-size: 2.5rem;
+                padding-left: 40px;
+            }
         }
     }
     &__select {
         display: flex;
         justify-content: space-around;
+        @include breakPointS($tab) {
+            flex-direction: column;
+        }
         h3 {
             display: flex;
             justify-content: left;
             color: #ffffff;
-            font-size: 5rem;
+            font-size: 3.5rem;
             padding: 30px 0 0 30px;
+            @include breakPoint($pc) {
+                font-size: 5rem;
+            }
+            @include breakPointS($phone) {
+                font-size: 3rem;
+            }
         }
         span {
             display: flex;
@@ -31,53 +47,88 @@
             font-size: 5rem;
             margin-top: -30px;
             padding-left: 30px;
+            @include breakPointS($phone) {
+                display: none;
+            }
         }
         &__b-img1 {
-            margin: 130px 40px 130px 100px;
+            margin: 30px 30px 30px 30px;
             position: relative;
             background-image: url(/img/ham1.png);
             background-size: cover;
-            width: 100%;
-            height: 1193px;
+            min-height: 643px;
+            @include breakPoint($pc) {
+                margin: 130px 40px 130px 80px;
+            }
+            @include breakPoint($tab) {
+                margin: 50px 50px 50px 25px;
+                height: 1193px;
+                width: 100%;
+            }
             &__box {
                 position: absolute;
-                top: 800px;
+                bottom: 0;
                 &__detail {
-                    height: 174px;
+                    min-height: 174px;
                     margin: 0 30px 20px 30px;
                     background-color: rgba(255, 255, 255, 0.8);
+                    @include breakPointS($phone) {
+                        margin: 0 10px 20px 10px;
+                    }
                     h4 {
                         font-size: 1.5rem;
                         padding: 20px;
+                        @include breakPointS($phone) {
+                            padding: 10px 10px 2px 10px;
+                        }
                     }
                     p {
                         font-size: 1rem;
                         padding: 10px 20px 30px 20px;
+                        @include breakPointS($phone) {
+                            padding: 0 10px 10px 10px;
+                        }
                     }
                 }
             }
         }
         &__b-img2 {
-            margin: 130px 100px 130px 40px;
+            margin: 30px 30px 30px 30px;
             position: relative;
             background-image: url(/img/ham2.png);
             background-size: cover;
-            width: 100%;
-            height: 1193px;
+            min-height: 643px;
+            @include breakPoint($pc) {
+                margin: 130px 80px 130px 40px;
+            }
+            @include breakPoint($tab) {
+                margin: 50px 50px 50px 25px;
+                height: 1193px;
+                width: 100%;
+            }
             &__box {
                 position: absolute;
-                top: 800px;
+                bottom: 0;
                 &__detail {
-                    height: 174px;
+                    min-height: 174px;
                     margin: 0 30px 20px 30px;
                     background-color: rgba(255, 255, 255, 0.8);
+                    @include breakPointS($phone) {
+                        margin: 0 10px 20px 10px;
+                    }
                     h4 {
                         font-size: 1.5rem;
                         padding: 20px;
+                        @include breakPointS($phone) {
+                            padding: 10px 10px 2px 10px;
+                        }
                     }
                     p {
                         font-size: 1rem;
                         padding: 10px 20px 30px 20px;
+                        @include breakPointS($phone) {
+                            padding: 0 10px 10px 10px;
+                        }
                     }
                 }
             }
@@ -90,31 +141,67 @@
     &__store {
         background-image: url(/img/map.png);
         background-size: cover;
-        height: 649px;
+        height: 691px;
+        @include breakPoint($phone) {
+            height: 649px;
+        }
         &__box {
             position: relative;
             width: 950px;
             color: #ffffff;
             height: 100%;
+            @include breakPointS($pc) {
+                width: 100%;
+            }
             h4 {
                 position: absolute;
                 font-size: 2.25rem;
-                padding: 80px 0 0 100px;
+                padding: 60px 0 0 50px;
                 z-index: 100;
+                @include breakPoint($phone) {
+                    padding: 80px 0 0 100px;
+                }
             }
             span {
                 position: absolute;
                 font-size: 5rem;
-                top: 100px;
-                left: 100px;
+                top: 50px;
+                left: 50px;
                 z-index: 100;
+                @include breakPoint($phone) {
+                    top: 100px;
+                    left: 100px;
+                }
             }
             p {
                 position: absolute;
-                font-size: 1rem;
-                top: 270px;
-                padding:0 100px 0 100px;
+                font-size: 0.9rem;
+                // top: 180px;
+                width: 400px;
+                letter-spacing: 2px;
+                // padding:0 50px 0 50px;
                 z-index: 100;
+                @include breakPointS($phone) {
+                    top: 53%;
+                    left: 51%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                }
+                @include breakPoint($phone) {
+                    top: 270px;
+                    font-size: 1rem;
+                    width: 100%;
+                    padding:0 20px 0 20px;
+                }
+                @include breakPoint($tab) {
+                    padding:0 100px 0 100px;
+                }
+                @include breakPointS($mini) {
+                    width: 300px;
+                    top: 60%;
+                    left: 52.5%;
+                }
             }
         }
         &__box:after {
@@ -125,6 +212,9 @@
             right: 0;
             top: 0;
             bottom: 0;
+            @include breakPointS($phone) {
+                height: 450px;
+            }
         }
     }
     &__store:after {

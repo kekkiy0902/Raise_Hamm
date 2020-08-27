@@ -1,13 +1,13 @@
 .sample2Text {
     width              : 210px;            /* inputの幅           */
-    background-image : url(../../../img/megane.png);  /* 背景画像：虫眼鏡(*1)*/
+    background-image   : url(/img/megane.png);  /* 背景画像：虫眼鏡(*1)*/
     background-repeat  : no-repeat;        /* 背景は繰り返さない  */
     background-position: 8px center;       /* 背景の位置          */
     background-size    : auto 60%;         /* 背景のサイズ        */
     background-color   : #fff;             /* 背景色              */
     margin             : 0 auto;           /* サンプルは中央寄せ  */
     padding-left       : 30px;             /* 虫眼鏡分の左余白    */
-    border             : 2px solid #666;   /* 枠線　幅,実践,色    */
+    border             : 1px solid #666;   /* 枠線　幅,実践,色    */
     border-radius      : 6px;              /* 角丸                */
     color              : #555;             /* 文字色              */
     font-size          : 18px;             /* フォントサイズ      */

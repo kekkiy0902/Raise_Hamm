@@ -6,7 +6,10 @@ body {
     min-height: 100vh;
     color: #707070;
     grid-template-rows: 217px 1fr 150px;
-    grid-template-columns: 1fr 15%;
+    grid-template-columns: 1fr;
+    @include breakPoint($pc) {
+        grid-template-columns: 1fr 20%;
+    }
     grid-template-areas:
         "header  nav "
         "main  nav"
@@ -21,9 +24,10 @@ main {
     background: #fff;
 }
 nav {
-    grid-area: nav;
-    background: #F2EDE9;
-    grid-row: 1 / 4;
+    @include breakPoint($pc) {
+        grid-area: nav;
+        background: #F2EDE9;
+    }
 }
 footer {
     grid-area: footer;
