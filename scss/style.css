@@ -254,6 +254,7 @@ footer {
 
 /*中身*/
 #nav-content {
+  background-color: #F2EDE9;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -265,8 +266,6 @@ footer {
   max-width: 330px;
   /*最大幅（調整してください）*/
   height: 100%;
-  background: #fff;
-  /*背景色*/
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   /*滑らかに表示*/
@@ -809,6 +808,13 @@ footer {
   }
   .sideNav__menu__list__s-menu li {
     margin: 0 0 20px 0px;
+  }
+  .sideNav__menu__cancel {
+    text-align: right;
+    margin: 25px 20px 150px 0;
+  }
+  .sideNav__menu__cancel label {
+    font-size: 2.3rem !important;
   }
 }
 
