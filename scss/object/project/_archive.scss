@@ -1,0 +1,125 @@
+.archive {
+    position: relative;
+    &__banner-img {
+        background-image: url(/img/archive-top.png);
+        background-size: cover;
+        background-position: center;
+        height: 285px;
+        @include breakPoint($pc) {
+            height: 239px;
+        }
+        &__font {
+            h2  {
+                position: absolute;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                height: 100%;
+                color: #ffffff;
+                font-size: 2.8rem;
+                padding-left: 80px;
+                z-index: 110;
+                @include breakPointS($phone) {
+                    font-size: 2.5rem;
+                    padding-left: 40px;
+                }
+            }
+            h3  {
+                position: absolute;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                height: 100%;
+                color: #ffffff;
+                font-size: 1.2rem;
+                padding: 8px 0 0 240px;
+                z-index: 110;
+                @include breakPointS($phone) {
+                    font-size: 2.5rem;
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    &__banner-img:after {
+        position: absolute;
+        content: '';
+        background-color: rgba(0,0,0,0.55);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+}
+
+.mainTable {
+    &__sentence {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__detail {
+            margin: 50px 0px 50px 0px;
+            max-width: 1353px;
+            h3 {
+                margin-bottom: 30px;
+                font-size: 2.25rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    &__cbBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        &__container {
+            display: flex;
+            max-width: 1353px;
+            &__left {
+                background-image: url(/img/cbBox.png);
+                background-size: cover;
+                background-position: center;
+                width: 677px;
+                height: 471px;
+            }
+            &__right {
+                width: 676px;
+                height: 471px;
+                background-color: #3C2B1C;
+                color: #fff;
+                h3 {
+                    margin: 40px 0 0 60px;
+                    font-size: 2.25rem;
+                }
+                h4 {
+                    margin: 40px 0 0 60px;
+                    font-size: 1.5rem;;
+                }
+                p {
+                    margin: 10px 0 0 60px;
+                    font-size: 1rem;;
+                    max-width: 509px;
+                }
+                &__button {
+                    text-align: center;
+                    margin-top: 70px;
+                    button {
+                        width: 292px;
+                        height: 76px;
+                        border-radius: 40px 40px 40px 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagenate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 70px 0;
+}

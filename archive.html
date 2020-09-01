@@ -1,0 +1,204 @@
+<!--     HTML     -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Site</title>
+<!--     CSS     -->
+    <link rel="stylesheet" href="scss/style.css">
+<!--     JavaScript     -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<!--     body     -->
+<body>
+    <header class="header__balance">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">Menu</label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <nav class="sideNav">
+                    <ul class="sideNav__menu">
+                        <div class="sideNav__menu__cancel">
+                            <label id="nav-open" for="nav-input">✖️</label>
+                        </div>
+                        <div class="sideNav__menu__sub">
+                            <p>バーガー</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>ハンバーガー</li>
+                                <li>チーズバーガー</li>
+                                <li>テリヤキバーガー</li>
+                                <li>アボカドバーガー</li>
+                                <li>フィッシュバーガー</li>
+                                <li>ベーコンバーガー</li>
+                                <li>チキンバーガー</li>
+                            </ul>
+                        </li>
+                        <div class="sideNav__menu__sub">
+                            <p>サイド</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>ポテト</li>
+                                <li>サラダ</li>
+                                <li>ナゲット</li>
+                                <li>コーン</li>
+                            </ul>
+                        </li>
+                        <div class="sideNav__menu__sub">
+                            <p>ドリンク</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>コーラ</li>
+                                <li>ファンタ</li>
+                                <li>オレンジ</li>
+                                <li>アップル</li>
+                                <li>紅茶（Ice/Hot）</li>
+                                <li>コーヒー（Ice/Hot）</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__balance__name">
+            <h1>Hamburger</h1>
+        </div>
+        <div class="header__balance__search">
+            <form onsubmit="return goSearch()" class="sample2Area">
+                <input type="text" class="sample2Text header__balance__search__box">
+                <input id="sbtn1" class="header__balance__search__button" type="submit" value="検索">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="archive">
+            <div class="archive__banner-img">
+                <div class="archive__banner-img__font">
+                    <h2>Menu:</h2>
+                    <h3>チーズバーガー</h3>
+                </div>
+            </div>
+        </section>
+        <section class="mainTable">
+            <div class="mainTable__sentence">
+                <div class="mainTable__sentence__detail">
+                    <h3>小見出しが入ります</h3>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </div>
+            <div class="mainTable__cbBox">
+                <div class="mainTable__cbBox__container">
+                    <div class="mainTable__cbBox__container__left">
+                        　
+                    </div>
+                    <div class="mainTable__cbBox__container__right">
+                        <h3>チーズバーガー</h3>
+                        <h4>小見出しが入ります</h4>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <div class="mainTable__cbBox__container__right__button">
+                            <button>詳しく見る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainTable__cbBox">
+                <div class="mainTable__cbBox__container">
+                    <div class="mainTable__cbBox__container__left">
+                        　
+                    </div>
+                    <div class="mainTable__cbBox__container__right">
+                        <h3>ダブルチーズバーガー</h3>
+                        <h4>小見出しが入ります</h4>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <div class="mainTable__cbBox__container__right__button">
+                            <button>詳しく見る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainTable__cbBox">
+                <div class="mainTable__cbBox__container">
+                    <div class="mainTable__cbBox__container__left">
+                        　
+                    </div>
+                    <div class="mainTable__cbBox__container__right">
+                        <h3>スペシャルチーズバーガー</h3>
+                        <h4>小見出しが入ります</h4>
+                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <div class="mainTable__cbBox__container__right__button">
+                            <button>詳しく見る</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pagenate">
+            <div class="pagenate__top">
+                <img src="img/pagenate.png" alt="">
+            </div>
+        </section>
+    </main>
+        <nav class="side">
+            <ul class="side__menu">
+                <div class="side__menu__title">
+                    <p>Menu</p>
+                </div>
+                <div class="side__menu__sub">
+                    <p>バーガー</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>ハンバーガー</li>
+                        <li>チーズバーガー</li>
+                        <li>テリヤキバーガー</li>
+                        <li>アボカドバーガー</li>
+                        <li>フィッシュバーガー</li>
+                        <li>ベーコンバーガー</li>
+                        <li>チキンバーガー</li>
+                    </ul>
+                </li>
+                <div class="side__menu__sub">
+                    <p>サイド</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>ポテト</li>
+                        <li>サラダ</li>
+                        <li>ナゲット</li>
+                        <li>コーン</li>
+                    </ul>
+                </li>
+                <div class="side__menu__sub">
+                    <p>ドリンク</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>コーラ</li>
+                        <li>ファンタ</li>
+                        <li>オレンジ</li>
+                        <li>アップル</li>
+                        <li>紅茶（Ice/Hot）</li>
+                        <li>コーヒー（Ice/Hot）</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <footer>
+        <div class="foot">
+            <div class="foot__info">
+                <p>ショップ情報 | ヒストリー</p>
+            </div>
+            <div class="foot__info-sub">
+                <p>Copyright: RaiseTech</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
