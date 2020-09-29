@@ -19,3 +19,7 @@ $(function(){
 	});
 	
 });
+
+/*codeタグを特殊文字化*/
+var code = $('code');
+code.html(code.html().replace(/</g,'&lt;').replace(/>/,'&gt;'));

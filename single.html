@@ -1,0 +1,295 @@
+<!--     HTML     -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Site</title>
+<!--     CSS     -->
+    <link rel="stylesheet" href="scss/style.css">
+<!--     JavaScript     -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+
+<!--     body     -->
+<body>
+    <header class="header__balance">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">Menu</label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <nav class="sideNav">
+                    <ul class="sideNav__menu">
+                        <div class="sideNav__menu__cancel">
+                            <label id="nav-open" for="nav-input">✖️</label>
+                        </div>
+                        <div class="sideNav__menu__sub">
+                            <p>バーガー</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>ハンバーガー</li>
+                                <li>チーズバーガー</li>
+                                <li>テリヤキバーガー</li>
+                                <li>アボカドバーガー</li>
+                                <li>フィッシュバーガー</li>
+                                <li>ベーコンバーガー</li>
+                                <li>チキンバーガー</li>
+                            </ul>
+                        </li>
+                        <div class="sideNav__menu__sub">
+                            <p>サイド</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>ポテト</li>
+                                <li>サラダ</li>
+                                <li>ナゲット</li>
+                                <li>コーン</li>
+                            </ul>
+                        </li>
+                        <div class="sideNav__menu__sub">
+                            <p>ドリンク</p>
+                        </div>
+                        <li class="sideNav__menu__list">
+                            <ul class="sideNav__menu__list__s-menu">
+                                <li>コーラ</li>
+                                <li>ファンタ</li>
+                                <li>オレンジ</li>
+                                <li>アップル</li>
+                                <li>紅茶（Ice/Hot）</li>
+                                <li>コーヒー（Ice/Hot）</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__balance__name">
+            <h1>Hamburger</h1>
+        </div>
+        <div class="header__balance__search">
+            <form onsubmit="return goSearch()" class="sample2Area">
+                <input type="text" class="sample2Text header__balance__search__box">
+                <input id="sbtn1" class="header__balance__search__button" type="submit" value="検索">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="single">
+            <div class="single__banner-img">
+                <h2>h1 チーズバーガー</h2>
+            </div>
+        </section>
+        <article class="sigle-position">
+            <section class="contents">
+                <ul class="contents__title">
+                    <li class="contents__title__name">
+                        <h2>見出しh2</h2>
+                    </li>
+                    <li class="contents__title__name">
+                        <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
+                    </li>
+                    <li class="contents__title__name">
+                        <h3>見出しh3</h3>
+                    </li>
+                    <li class="contents__title__name">
+                        <h4>見出しh4</h4>
+                    </li>
+                    <li class="contents__title__name">
+                        <h4>見出しh3</h4>
+                    </li>
+                    <li class="contents__title__name">
+                        <h4>見出しh4</h4>
+                    </li>
+                    <li class="contents__title__name">
+                        <h4>見出しh5</h4>
+                    </li>
+                    <li class="contents__title__name">
+                        <h4>見出しh6</h4>
+                    </li>
+                </ul>
+            </section>
+            <section class="note">
+                <div class="note__box">
+                    <div class="note__box__detail">
+                        <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ
+                        </p>
+                    </div>
+                    <div class="note__box__detail">
+                        <p>出典元: <a href="">○○○○○○○○○○○○</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="images">
+                <div class="images__top">
+                </div>
+                <div class="images__intro">
+                    <div class="images__intro__pic">
+                    </div>
+                    <div class="images__intro__box">
+                        <p class="images__intro__box__up"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
+                    </div>
+                </div>
+                <div class="images__intro">
+                    <div class="images__intro__box">
+                        <p class="images__intro__box__down"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
+                    </div>
+                    <div class="images__intro__pic">
+                    </div>
+                </div>
+                <div class="images__middle">
+                    <div class="images__middle__center">
+                    </div>
+                </div>
+                <div class="images__table">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                    <img class="images__table__img" src="img/sandSmall.png" alt="">
+                </div>
+            </section>
+            <section class="listMix">
+                <div class="listMix__ul">
+                    <h5>1.リストリストリスト</h5>
+                    <h5>2.リストリストリスト</h5>
+                </div>
+                <div class="listMix__ul margin-z">
+                    <h5>1.リスト2リスト2リスト2</h5>
+                    <h5>2.リスト2リスト2リスト2</h5>
+                </div>
+                <div class="listMix__ul">
+                    <h5>1.リストリストリスト</h5>
+                    <h5>2.リストリストリスト</h5>
+                </div>
+                <div class="listMix__ul">
+                    <h5>リストリストリスト</h5>
+                    <h5>リストリストリスト</h5>
+                </div>
+                <div class="listMix__ul margin-z">
+                    <h5>リスト2リスト2リスト2</h5>
+                    <h5>リスト2リスト2リスト2</h5>
+                </div>
+                <div class="listMix__ul">
+                    <h5>リストリストリスト</h5>
+                    <h5>リストリストリスト</h5>
+                </div>
+            </section>
+            <section class="basicModel">
+                <ul>
+                    <li>&lt;html&gt;</li>
+                    <ul>
+                        <li>&lt;head&gt;</li>
+                        <li>&lt;/head&gt;</li>
+                        <li>&lt;body&gt;</li>
+                        <li>&lt;/body&gt;</li>
+                    </ul>
+                    <li>&lt;/html&gt;</li>
+                </ul>
+            </section>
+            <section class="tables">
+                <table border="1" class="tables__box">
+                    <tr class="tables__box__tr">
+                        <td class="tables__box__tr__tdLeft">
+                            テーブル
+                        </td>
+                        <td class="tables__box__tr__tdRight">
+                            テーブル
+                        </td>
+                    </tr>
+                    <tr class="tables__box__tr">
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                    </tr>
+                    <tr class="tables__box__tr">
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                    </tr>
+                    <tr class="tables__box__tr">
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                        <td class="tables__box__tr__td">
+                            テーブル
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="buttons">
+                <button class="buttons__btn">ボタン</button>
+                <h5 class="buttons__h5">boldboldboldboldboldboldbold</h5>
+            </section>
+        </article>
+    </main>
+        <nav class="side">
+            <ul class="side__menu">
+                <div class="side__menu__title">
+                    <p>Menu</p>
+                </div>
+                <div class="side__menu__sub">
+                    <p>バーガー</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>ハンバーガー</li>
+                        <li>チーズバーガー</li>
+                        <li>テリヤキバーガー</li>
+                        <li>アボカドバーガー</li>
+                        <li>フィッシュバーガー</li>
+                        <li>ベーコンバーガー</li>
+                        <li>チキンバーガー</li>
+                    </ul>
+                </li>
+                <div class="side__menu__sub">
+                    <p>サイド</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>ポテト</li>
+                        <li>サラダ</li>
+                        <li>ナゲット</li>
+                        <li>コーン</li>
+                    </ul>
+                </li>
+                <div class="side__menu__sub">
+                    <p>ドリンク</p>
+                </div>
+                <li class="side__menu__list">
+                    <ul class="side__menu__list__s-menu">
+                        <li>コーラ</li>
+                        <li>ファンタ</li>
+                        <li>オレンジ</li>
+                        <li>アップル</li>
+                        <li>紅茶（Ice/Hot）</li>
+                        <li>コーヒー（Ice/Hot）</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <footer>
+        <div class="foot">
+            <div class="foot__info">
+                <p>ショップ情報 | ヒストリー</p>
+            </div>
+            <div class="foot__info-sub">
+                <p>Copyright: RaiseTech</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

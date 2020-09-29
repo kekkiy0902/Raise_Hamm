@@ -1,7 +1,9 @@
 $mini: 415px;
 $phone: 576px;
 $tab: 768px;
+$tabMiddle: 881px;
 $pc: 1025px;
+$pcMiddle: 1452px;
 
 // 〜以上
 @mixin breakPoint($breakPoint) {

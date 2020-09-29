@@ -1,0 +1,7 @@
+.fontSearch h3 {
+    padding: 8px 0 0 280px;
+    @include breakPointS($phone) {
+        font-size: 1rem;
+        padding: 50px 0 0 40px;
+    }
+}
